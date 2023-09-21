@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="bootstrap-5.3.2-dist/css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid p-5 bg-primary text-white-50 text-center">
+        <h1>My First Bootstrap Page</h1>
+        <p>Resize this responsive page to see the effect!</p> 
+      </div>
+
+      <div class="container mt-5"> <!--mt-1 used for adding margin-top spacing to element-->
+        <div class="row">
+          <div class="col-sm-4"> <!-- col-4 specifies that the column should occupy 4 out of the 12 columns in a row-->
+            <h3>Column 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+          </div>
+          <div class="col-sm-4">
+            <h3>Column 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+          </div>
+          <div class="col-sm-4">
+            <h3>Column 3</h3>        
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="container p-5 my-5 bg-primary text-white"></div>
+
+    <div class="container-sm border h1 mark text-black-50">Resize to see the effect <small>.container-sm</small></div>
+    <div class="container-md border h2 small">.container-md</div>
+    <div class="container-lg border h3">.container-lg</div>
+    <div class="container-xl border h4">.container-xl</div>
+    <div class="container-xxl borderh6">.container-xxl</div>
+
+
+    <div class="container mt-3">
+        <h2>Basic Table</h2>
+        <p>The .table class adds basic styling (light padding and horizontal dividers) to a table:</p>            
+        <table class="table table-sm table-striped table-bordered table-hover table-dark text-center table-responsive-sm">
+          <thead>
+            <tr class="table-secondary" >
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+            </tr>
+            <tr>
+              <td>July</td>
+              <td>Dooley</td>
+              <td>july@example.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="container"> <img class="rounded-circle float-end" src="img/product.jpg" alt=""> </div>
+      <div class="container"> <img class="img-thumbnail float-start" src="img/product.jpg" alt=""> </div>
+      <img class="d-block mx-auto img-fluid" src="img/product.jpg" alt="">
+
+      <div class="alert alert-success">
+        <strong>Success!</strong> Indicates a successful or positive action.
+      </div>
+
+       <!-- to close an alert message-->
+      <div class="container mt-3">
+        <h2>Alerts</h2>
+        <p>The button with class="btn-close" and data-bs-dismiss="alert" is used to close the alert box.</p>
+        <p>The alert-dismissible class aligns the button to the right.</p>
+        <div class="alert alert-success alert-dismissible fade show">
+          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          <strong>Success!</strong> This alert box could indicate a successful or positive action.
+        </div>
+        <div class="alert alert-info alert-dismissible">
+          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+        </div>
+        <div class="alert alert-warning alert-dismissible">
+          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+        </div>
+        <div class="alert alert-danger alert-dismissible">
+          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+        </div>
+        <div class="alert alert-primary alert-dismissible">
+          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          <strong>Primary!</strong> Indicates an important action.
+        </div>
+        <div class="alert alert-secondary alert-dismissible">
+          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          <strong>Secondary!</strong> Indicates a slightly less important action.
+        </div>
+        <div class="alert alert-dark alert-dismissible">
+          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          <strong>Dark!</strong> Dark grey alert.
+        </div>
+        <div class="alert alert-light alert-dismissible">
+          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          <strong>Light!</strong> Light grey alert.
+        </div>
+      </div>
+      
+
+<!--Containers
+
+Bootstrap 5 also requires a containing element to wrap site contents.
+There are two container classes to choose from:
+The .container class provides a responsive fixed width container
+The .container-fluid class provides a full width container, spanning the entire width of the viewport
+.pt-5 = padding top 5
+.mark = will mark element
+.small = makes an element smaller
+.mx-auto (margin:auto) 
+ .d-block (display block)
+ d-block mx-auto (to center image)
+.my (margin on the y-axis)
+.mx (margin on the x-axis)
+.bg-primary, .bg-success, .bg-info, .bg-warning, .bg-danger, .bg-secondary, .bg-dark and .bg-light.
+
+-->
+      </body>
+      </html>
+      
+</body>
+</html>
